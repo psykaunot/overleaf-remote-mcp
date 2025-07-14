@@ -1,0 +1,18 @@
+2025-07-01 14:09:43 [INFO] root: Logging configured with level: INFO
+2025-07-01 14:09:43 [INFO] root: Log file: logs/mcp_server_20250701.log
+2025-07-01 14:09:43 [INFO] src.services.mcp_server: MCP Server instance created
+2025-07-01 14:09:43 [INFO] __main__: Initializing Overleaf Remote MCP Server...
+2025-07-01 14:09:43 [INFO] src.services.mcp_server: Initializing MCP Server components...
+2025-07-01 14:09:43 [INFO] src.services.document_service: Document Service initialized
+2025-07-01 14:09:43 [INFO] src.services.document_service: Document Service database initialized
+2025-07-01 14:09:43 [INFO] src.services.overleaf_service: Overleaf Service initialized
+2025-07-01 14:09:43 [INFO] src.services.overleaf_service: Overleaf credentials not configured - running in offline mode
+2025-07-01 14:09:43 [INFO] src.services.overleaf_service: Overleaf Service initialized
+2025-07-01 14:09:43 [INFO] src.mcp_components.resources.manager: Resource Manager initialized
+2025-07-01 14:09:43 [INFO] src.mcp_components.tools.manager: Tool Manager initialized
+2025-07-01 14:09:43 [INFO] src.mcp_components.prompts.manager: Prompt Manager initialized
+2025-07-01 14:09:43 [INFO] src.services.mcp_server: MCP Server initialization completed successfully
+2025-07-01 14:09:43 [INFO] __main__: Server initialization completed successfully
+2025-07-01 14:09:43 [INFO] __main__: Starting Overleaf Remote MCP Server on 0.0.0.0:5000
+2025-07-01 14:09:43 [INFO] __main__: Debug mode: False
+2025-07-01 14:09:43 [INFO] __main__: Log level: INFO

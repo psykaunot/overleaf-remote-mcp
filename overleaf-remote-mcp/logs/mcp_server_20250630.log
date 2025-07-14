@@ -1,0 +1,40 @@
+2025-06-30 14:29:27 [INFO] root: Logging configured with level: INFO
+2025-06-30 14:29:27 [INFO] root: Log file: logs/mcp_server_20250630.log
+2025-06-30 14:29:27 [INFO] src.services.mcp_server: MCP Server instance created
+2025-06-30 14:29:27 [INFO] __main__: Initializing Overleaf Remote MCP Server...
+2025-06-30 14:29:27 [INFO] src.services.mcp_server: Initializing MCP Server components...
+2025-06-30 14:29:27 [INFO] src.services.document_service: Document Service initialized
+2025-06-30 14:29:27 [INFO] src.services.document_service: Document Service database initialized
+2025-06-30 14:29:27 [INFO] src.services.overleaf_service: Overleaf Service initialized
+2025-06-30 14:29:27 [INFO] src.services.overleaf_service: Overleaf credentials not configured - running in offline mode
+2025-06-30 14:29:27 [INFO] src.services.overleaf_service: Overleaf Service initialized
+2025-06-30 14:29:27 [INFO] src.mcp_components.resources.manager: Resource Manager initialized
+2025-06-30 14:29:27 [INFO] src.mcp_components.tools.manager: Tool Manager initialized
+2025-06-30 14:29:27 [INFO] src.mcp_components.prompts.manager: Prompt Manager initialized
+2025-06-30 14:29:27 [INFO] src.services.mcp_server: MCP Server initialization completed successfully
+2025-06-30 14:29:27 [INFO] __main__: Server initialization completed successfully
+2025-06-30 14:29:27 [INFO] __main__: Starting Overleaf Remote MCP Server on 0.0.0.0:5000
+2025-06-30 14:29:27 [INFO] __main__: Debug mode: False
+2025-06-30 14:29:27 [INFO] __main__: Log level: INFO
+2025-06-30 14:30:41 [INFO] src.routes.sse: New SSE connection from client: default
+2025-06-30 14:30:41 [ERROR] src.routes.sse: Error in SSE stream for client default: Working outside of request context.
+
+This typically means that you attempted to use functionality that needed
+an active HTTP request. Consult the documentation on testing for
+information about how to avoid this problem.
+2025-06-30 14:33:13 [ERROR] main: Exception on /.well-known/oauth-authorization-server [GET]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/ubuntu/projects/overleaf-remote-mcp-complete/overleaf-remote-mcp/src/main.py", line 107, in serve
+    return send_from_directory(static_folder_path, 'index.html')
+NameError: name 'send_from_directory' is not defined
+2025-06-30 14:33:13 [ERROR] __main__: Internal server error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.

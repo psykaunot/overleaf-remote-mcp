@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "overleaf-remote-mcp": {
+      "command": "python3",
+      "args": [
+        "/home/ubuntu/projects/overleaf-remote-mcp-complete/overleaf-remote-mcp/src/main_stdio.py"
+      ],
+      "env": {
+        "MCP_LOG_LEVEL": "INFO"
+      }
+    }
+  }
+}
